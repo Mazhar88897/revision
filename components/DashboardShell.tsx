@@ -13,7 +13,7 @@ export default function DashboardShell({
   return (
     <div className="fixed inset-0 flex flex-col bg-[#27e4d7] border-t-4 border-black lg:flex-row lg:items-stretch">
       <SubjectSidebar open={open} onClose={() => setOpen(false)} />
-      <main className="flex-1 min-w-0 overflow-y-auto">
+      <main className="flex-1 min-w-0 overflow-x-hidden overflow-y-auto">
         {!open && (
           <button
             type="button"
